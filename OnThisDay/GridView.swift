@@ -10,6 +10,7 @@ import SwiftUI
 struct GridView: View {
     // 1
     var gridData: [Event]
+    var eventName: EventType
 
     // 2
     var columns: [GridItem] {
@@ -18,7 +19,7 @@ struct GridView: View {
 
     
     var body: some View {
-        // 1
+        TitleHeader(event: eventName.rawValue)        // 1
         ScrollView {
           // 2
           LazyVGrid(columns: columns, spacing: 15) {
@@ -28,9 +29,19 @@ struct GridView: View {
                 // 4
                 .frame(height: 350, alignment: .topLeading)
                 // styling modifiers go here
+                // 1
+                .background()
+                .clipped()
+                .border(.secondary, width: 1)
+                // 2
+                .padding(.bottom, 5)
+                // 3
+                .shadow(color: .primary.opacity(0.3), radius: 3, x: 3, y: 3)
+
             }
           }
-        }
+        }.padding(.vertical)
+
 
     }
 }

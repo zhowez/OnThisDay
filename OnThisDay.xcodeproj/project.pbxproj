@@ -24,6 +24,7 @@
 		492FE91228505A72001068C4 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE91128505A72001068C4 /* EventView.swift */; };
 		492FE91428505AF3001068C4 /* SampleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE91328505AF3001068C4 /* SampleEvent.swift */; };
 		492FE91628505FE5001068C4 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE91528505FE5001068C4 /* GridView.swift */; };
+		492FE9182850691D001068C4 /* TitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE9172850691D001068C4 /* TitleHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		492FE91128505A72001068C4 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		492FE91328505AF3001068C4 /* SampleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEvent.swift; sourceTree = "<group>"; };
 		492FE91528505FE5001068C4 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		492FE9172850691D001068C4 /* TitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				492FE90F28505683001068C4 /* SidebarView.swift */,
 				492FE91128505A72001068C4 /* EventView.swift */,
 				492FE91528505FE5001068C4 /* GridView.swift */,
+				492FE9172850691D001068C4 /* TitleHeader.swift */,
 				492FE90128505272001068C4 /* Models */,
 				492FE90628505272001068C4 /* Utilities */,
 				492FE8DA285050AE001068C4 /* Assets.xcassets */,
@@ -313,6 +316,7 @@
 				492FE91028505683001068C4 /* SidebarView.swift in Sources */,
 				492FE8D9285050AB001068C4 /* ContentView.swift in Sources */,
 				492FE90B28505272001068C4 /* EventLink.swift in Sources */,
+				492FE9182850691D001068C4 /* TitleHeader.swift in Sources */,
 				492FE8D7285050AB001068C4 /* OnThisDayApp.swift in Sources */,
 				492FE91228505A72001068C4 /* EventView.swift in Sources */,
 				492FE91628505FE5001068C4 /* GridView.swift in Sources */,
