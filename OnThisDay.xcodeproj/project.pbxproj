@@ -25,6 +25,7 @@
 		492FE91428505AF3001068C4 /* SampleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE91328505AF3001068C4 /* SampleEvent.swift */; };
 		492FE91628505FE5001068C4 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE91528505FE5001068C4 /* GridView.swift */; };
 		492FE9182850691D001068C4 /* TitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FE9172850691D001068C4 /* TitleHeader.swift */; };
+		49DD492C285232B800CFFEBD /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD492B285232B800CFFEBD /* Menus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		492FE91328505AF3001068C4 /* SampleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEvent.swift; sourceTree = "<group>"; };
 		492FE91528505FE5001068C4 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		492FE9172850691D001068C4 /* TitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeader.swift; sourceTree = "<group>"; };
+		49DD492B285232B800CFFEBD /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,16 +120,13 @@
 			isa = PBXGroup;
 			children = (
 				492FE8D6285050AB001068C4 /* OnThisDayApp.swift */,
-				492FE8D8285050AB001068C4 /* ContentView.swift */,
-				492FE90F28505683001068C4 /* SidebarView.swift */,
-				492FE91128505A72001068C4 /* EventView.swift */,
-				492FE91528505FE5001068C4 /* GridView.swift */,
-				492FE9172850691D001068C4 /* TitleHeader.swift */,
+				49DD492A2852325C00CFFEBD /* Views */,
 				492FE90128505272001068C4 /* Models */,
 				492FE90628505272001068C4 /* Utilities */,
 				492FE8DA285050AE001068C4 /* Assets.xcassets */,
 				492FE8DF285050AE001068C4 /* OnThisDay.entitlements */,
 				492FE8DC285050AE001068C4 /* Preview Content */,
+				49DD492B285232B800CFFEBD /* Menus.swift */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -176,6 +175,18 @@
 				492FE90828505272001068C4 /* Networker.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		49DD492A2852325C00CFFEBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				492FE8D8285050AB001068C4 /* ContentView.swift */,
+				492FE91128505A72001068C4 /* EventView.swift */,
+				492FE91528505FE5001068C4 /* GridView.swift */,
+				492FE9172850691D001068C4 /* TitleHeader.swift */,
+				492FE90F28505683001068C4 /* SidebarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				492FE90B28505272001068C4 /* EventLink.swift in Sources */,
 				492FE9182850691D001068C4 /* TitleHeader.swift in Sources */,
 				492FE8D7285050AB001068C4 /* OnThisDayApp.swift in Sources */,
+				49DD492C285232B800CFFEBD /* Menus.swift in Sources */,
 				492FE91228505A72001068C4 /* EventView.swift in Sources */,
 				492FE91628505FE5001068C4 /* GridView.swift in Sources */,
 				492FE91428505AF3001068C4 /* SampleEvent.swift in Sources */,

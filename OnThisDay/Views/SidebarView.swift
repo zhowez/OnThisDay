@@ -10,6 +10,9 @@ import SwiftUI
 struct SidebarView: View {
     // 1
     @Binding var selection: EventType?
+    @EnvironmentObject var appState: AppState
+    @AppStorage("showTotals") var showTotals = true
+
 
     var body: some View {
       // 2
@@ -18,7 +21,11 @@ struct SidebarView: View {
         Section("Today") {
           // 4
           ForEach(EventType.allCases, id: \.self) { type in
-            Text(type.rawValue)
+            Text(type.rawValue).badge(
+                showTotals
+                ? appState.countFor(eventType: type)
+                : 0)
+
           }
         }
       }
@@ -28,10 +35,4 @@ struct SidebarView: View {
 
 }
 
-struct SidebarView_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarView(selection: .constant(nil))
-          .frame(width: 200)
 
-    }
-}

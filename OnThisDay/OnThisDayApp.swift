@@ -15,6 +15,9 @@ struct OnThisDayApp: App {
         WindowGroup {
             ContentView().environmentObject(appState)
 
-        }
+        }.commands {
+            Menus()
+          }
+
     }
 }
