@@ -10,9 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @State private var eventType: EventType? = .events
     @EnvironmentObject var appState: AppState
+    @State private var searchText = ""
+
+    
+//    var events: [Event] {
+//        appState.dataFor(eventType: eventType)
+//    }
+    
     var events: [Event] {
-        appState.dataFor(eventType: eventType)
+      appState.dataFor(eventType: eventType, searchText: searchText)
     }
+
+    
     var windowTitle: String {
         if let eventType = eventType {
             return "On This Day - \(eventType.rawValue)"
@@ -41,7 +50,12 @@ struct ContentView: View {
             minHeight: 400,
             idealHeight: 800,
             maxHeight: .infinity)
-        .navigationTitle(windowTitle)
+        .navigationTitle(windowTitle).toolbar(id: "mainToolbar") {
+            Toolbar()
+          }
+.searchable(text: $searchText)
+
+
 
         
     }

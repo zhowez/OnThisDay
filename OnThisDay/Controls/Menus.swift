@@ -14,6 +14,8 @@ import SwiftUI
 struct Menus: Commands {
     
     @AppStorage("showTotals") var showTotals = true
+    @AppStorage("displayMode") var displayMode = DisplayMode.auto
+
 
     
    var body: some Commands {
@@ -43,7 +45,19 @@ struct Menus: Commands {
            // 3
            .keyboardShortcut("t", modifiers: .command)
 
-           // more menu items go here
+           // 1
+           Divider()
+
+           // 2
+           Picker("Appearance", selection: $displayMode) {
+             // 3
+             ForEach(DisplayMode.allCases, id: \.self) {
+               // 4
+               Text($0.rawValue)
+                 .tag($0)
+             }
+           }
+
 
        }
 
