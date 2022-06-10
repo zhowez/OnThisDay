@@ -11,7 +11,7 @@ struct GridView: View {
     // 1
     var gridData: [Event]
     var eventName: EventType
-
+    @AppStorage("showTotals") var showTotals = true
 
     // 2
     var columns: [GridItem] {
@@ -43,7 +43,10 @@ struct GridView: View {
           }
         }.padding(.vertical)
         
-        Text("Number Of Entries: \(gridData.count)").padding(.vertical)
+        
+        if(showTotals){
+            Text("Number Of Entries: \(gridData.count)").padding(.bottom, 8)
+        }
         
 
     }
