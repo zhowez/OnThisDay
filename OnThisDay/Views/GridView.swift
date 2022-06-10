@@ -12,6 +12,7 @@ struct GridView: View {
     var gridData: [Event]
     var eventName: EventType
 
+
     // 2
     var columns: [GridItem] {
       [GridItem(.adaptive(minimum: 250, maximum: 250), spacing: 20)]
@@ -41,7 +42,9 @@ struct GridView: View {
             }
           }
         }.padding(.vertical)
-
+        
+        Text("Number Of Entries: \(gridData.count)").padding(.vertical)
+        
 
     }
 }
