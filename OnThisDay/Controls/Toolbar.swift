@@ -12,6 +12,8 @@ import SwiftUI
 
 // 2
 struct Toolbar: CustomizableToolbarContent {
+    @Binding var viewMode: ViewMode
+
   var body: some CustomizableToolbarContent {
 
     // 3
@@ -44,6 +46,23 @@ struct Toolbar: CustomizableToolbarContent {
         }
         .help("Toggle Sidebar")
       }
+      
+      // 1
+      ToolbarItem(id: "viewMode") {
+        // 2
+        Picker("View Mode", selection: $viewMode) {
+          // 3
+          Label("Grid", systemImage: "square.grid.3x2")
+            .tag(ViewMode.grid)
+          Label("Table", systemImage: "tablecells")
+            .tag(ViewMode.table)
+        }
+        // 4
+        .pickerStyle(.segmented)
+        // 5
+        .help("Switch between Grid and Table")
+      }
+
 
       
       

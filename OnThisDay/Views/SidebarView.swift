@@ -12,6 +12,8 @@ struct SidebarView: View {
     @Binding var selection: EventType?
     @EnvironmentObject var appState: AppState
     @AppStorage("showTotals") var showTotals = true
+  
+
 
 
     var body: some View {

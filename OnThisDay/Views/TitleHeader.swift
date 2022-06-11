@@ -16,7 +16,7 @@ struct TitleHeader: View {
     
     
     var body: some View {
-        Text("\(event) - \(Date().formatted( Date.FormatStyle().day(.twoDigits).month(.wide)))").foregroundColor(.blue).font(.largeTitle).bold()
+        Text("\(event) - \(Date().formatted( Date.FormatStyle().day(.twoDigits).month(.wide)))").foregroundColor(.blue).font(.largeTitle).bold().padding(.top, 8)
         Divider()
     }
 }

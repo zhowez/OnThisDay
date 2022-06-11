@@ -10,7 +10,7 @@ import SwiftUI
 struct GridView: View {
     // 1
     var gridData: [Event]
-    var eventName: EventType
+   
     @AppStorage("showTotals") var showTotals = true
 
     // 2
@@ -20,7 +20,7 @@ struct GridView: View {
 
     
     var body: some View {
-        TitleHeader(event: eventName.rawValue)        // 1
+                // 1
         ScrollView {
           // 2
           LazyVGrid(columns: columns, spacing: 15) {

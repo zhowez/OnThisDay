@@ -7,10 +7,18 @@
 
 import SwiftUI
 
+enum ViewMode: Int {
+  case grid
+  case table
+}
+
 struct ContentView: View {
-    @State private var eventType: EventType? = .events
     @EnvironmentObject var appState: AppState
-    @State private var searchText = ""
+    @SceneStorage("eventType") var eventType: EventType?
+    @SceneStorage("searchText") var searchText = ""
+    @SceneStorage("viewMode") var viewMode: ViewMode = .grid
+
+
 
     
 //    var events: [Event] {
@@ -39,8 +47,15 @@ struct ContentView: View {
             SidebarView(selection: $eventType)
             
             //Don't love the idea of force unwrapping the value but its all i know for now
-            GridView(gridData: events, eventName: eventType!)
-            
+            //GridView(gridData: events, eventName: eventType!)
+            //TableView(tableData: events)
+            if viewMode == .table {
+              TableView(tableData: events)
+            } else {
+                GridView(gridData: events)
+            }
+
+
         }
         // 3
         .frame(
@@ -51,9 +66,17 @@ struct ContentView: View {
             idealHeight: 800,
             maxHeight: .infinity)
         .navigationTitle(windowTitle).toolbar(id: "mainToolbar") {
-            Toolbar()
+            Toolbar(viewMode: $viewMode)
+
           }
-.searchable(text: $searchText)
+.searchable(text: $searchText).onAppear {
+    if eventType == nil {
+      eventType = .events
+    }
+  }
+
+
+
 
 
 
