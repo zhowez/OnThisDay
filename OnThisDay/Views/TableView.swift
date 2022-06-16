@@ -14,6 +14,7 @@ struct TableView: View {
       return tableData.sorted(using: sortOrder)
     }
     @State private var selectedEventID: UUID?
+    @AppStorage("showTotals") var showTotals = true
     
     var selectedEvent: Event? {
       // 1
@@ -65,8 +66,11 @@ struct TableView: View {
             .frame(width: 250)
         }
 
-
+        if(showTotals){
+            Text("Number Of Entries: \(sortedTableData.count)").padding(.bottom, 8)
+        }
     }
+    
 }
 
 struct TableView_Previews: PreviewProvider {
