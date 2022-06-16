@@ -24,7 +24,8 @@ struct Menus: Commands {
        SidebarCommands()
        ToolbarCommands()
        
-       CommandGroup(before: .help) {
+       CommandGroup(replacing: .help) {
+
            // 1
            Button("ZenQuotes.io web site") {
              // 2

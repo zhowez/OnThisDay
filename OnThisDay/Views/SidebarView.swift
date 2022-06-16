@@ -12,6 +12,8 @@ struct SidebarView: View {
     @Binding var selection: EventType?
     @EnvironmentObject var appState: AppState
     @AppStorage("showTotals") var showTotals = true
+    @AppStorage("showBirths") var showBirths = true
+    @AppStorage("showDeaths") var showDeaths = true
     @SceneStorage("selectedDate") var selectedDate: String?
 
 
@@ -25,7 +27,8 @@ struct SidebarView: View {
             Section(selectedDate?.uppercased() ?? "TODAY") {
 
               // 4
-              ForEach(EventType.allCases, id: \.self) { type in
+            ForEach(validTypes, id: \.self) { type in
+
                 Text(type.rawValue).badge(
                     showTotals
                     ? appState.countFor(eventType: type, date: selectedDate)
@@ -63,6 +66,21 @@ struct SidebarView: View {
         }.frame(minWidth: 220)
 
     }
+    // 1
+    var validTypes: [EventType] {
+      // 2
+      var types = [EventType.events]
+      // 3
+      if showBirths {
+        types.append(.births)
+      }
+      if showDeaths {
+        types.append(.deaths)
+      }
+      // 4
+      return types
+    }
+
 
 }
 

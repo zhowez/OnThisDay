@@ -30,6 +30,8 @@
 		49DD49312853B27E00CFFEBD /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD49302853B27E00CFFEBD /* Toolbar.swift */; };
 		49DD493328551D4500CFFEBD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD493228551D4500CFFEBD /* TableView.swift */; };
 		49DD4942285ADBE400CFFEBD /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD4941285ADBE400CFFEBD /* DayPicker.swift */; };
+		49DD4944285BCCE900CFFEBD /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD4943285BCCE900CFFEBD /* PreferencesView.swift */; };
+		49DD4946285BD15400CFFEBD /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 49DD4945285BD15400CFFEBD /* Credits.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		492FE8D3285050AB001068C4 /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FE8D3285050AB001068C4 /* On This Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On This Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FE8D6285050AB001068C4 /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		492FE8D8285050AB001068C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		492FE8DA285050AE001068C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		49DD49302853B27E00CFFEBD /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		49DD493228551D4500CFFEBD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		49DD4941285ADBE400CFFEBD /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
+		49DD4943285BCCE900CFFEBD /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		49DD4945285BD15400CFFEBD /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		492FE8CA285050AB001068C4 = {
 			isa = PBXGroup;
 			children = (
+				49DD4945285BD15400CFFEBD /* Credits.html */,
 				492FE8D5285050AB001068C4 /* OnThisDay */,
 				492FE8E7285050AE001068C4 /* OnThisDayTests */,
 				492FE8F1285050AF001068C4 /* OnThisDayUITests */,
@@ -117,7 +122,7 @@
 		492FE8D4285050AB001068C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				492FE8D3285050AB001068C4 /* OnThisDay.app */,
+				492FE8D3285050AB001068C4 /* On This Day.app */,
 				492FE8E4285050AE001068C4 /* OnThisDayTests.xctest */,
 				492FE8EE285050AF001068C4 /* OnThisDayUITests.xctest */,
 			);
@@ -196,6 +201,7 @@
 				492FE90F28505683001068C4 /* SidebarView.swift */,
 				49DD493228551D4500CFFEBD /* TableView.swift */,
 				49DD4941285ADBE400CFFEBD /* DayPicker.swift */,
+				49DD4943285BCCE900CFFEBD /* PreferencesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		492FE8D2285050AB001068C4 /* OnThisDay */ = {
+		492FE8D2285050AB001068C4 /* On This Day */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 492FE8F8285050AF001068C4 /* Build configuration list for PBXNativeTarget "OnThisDay" */;
+			buildConfigurationList = 492FE8F8285050AF001068C4 /* Build configuration list for PBXNativeTarget "On This Day" */;
 			buildPhases = (
 				492FE8CF285050AB001068C4 /* Sources */,
 				492FE8D0285050AB001068C4 /* Frameworks */,
@@ -224,9 +230,9 @@
 			);
 			dependencies = (
 			);
-			name = OnThisDay;
+			name = "On This Day";
 			productName = OnThisDay;
-			productReference = 492FE8D3285050AB001068C4 /* OnThisDay.app */;
+			productReference = 492FE8D3285050AB001068C4 /* On This Day.app */;
 			productType = "com.apple.product-type.application";
 		};
 		492FE8E3285050AE001068C4 /* OnThisDayTests */ = {
@@ -301,7 +307,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				492FE8D2285050AB001068C4 /* OnThisDay */,
+				492FE8D2285050AB001068C4 /* On This Day */,
 				492FE8E3285050AE001068C4 /* OnThisDayTests */,
 				492FE8ED285050AF001068C4 /* OnThisDayUITests */,
 			);
@@ -314,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				492FE8DE285050AE001068C4 /* Preview Assets.xcassets in Resources */,
+				49DD4946285BD15400CFFEBD /* Credits.html in Resources */,
 				492FE8DB285050AE001068C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49DD4944285BCCE900CFFEBD /* PreferencesView.swift in Sources */,
 				492FE90D28505272001068C4 /* String_decoded.swift in Sources */,
 				492FE90A28505272001068C4 /* Event.swift in Sources */,
 				492FE90928505272001068C4 /* AppState.swift in Sources */,
@@ -382,12 +390,12 @@
 /* Begin PBXTargetDependency section */
 		492FE8E6285050AE001068C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 492FE8D2285050AB001068C4 /* OnThisDay */;
+			target = 492FE8D2285050AB001068C4 /* On This Day */;
 			targetProxy = 492FE8E5285050AE001068C4 /* PBXContainerItemProxy */;
 		};
 		492FE8F0285050AF001068C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 492FE8D2285050AB001068C4 /* OnThisDay */;
+			target = 492FE8D2285050AB001068C4 /* On This Day */;
 			targetProxy = 492FE8EF285050AF001068C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -644,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		492FE8F8285050AF001068C4 /* Build configuration list for PBXNativeTarget "OnThisDay" */ = {
+		492FE8F8285050AF001068C4 /* Build configuration list for PBXNativeTarget "On This Day" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				492FE8F9285050AF001068C4 /* Debug */,
