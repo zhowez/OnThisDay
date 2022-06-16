@@ -29,6 +29,7 @@
 		49DD492E2853A65D00CFFEBD /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD492D2853A65D00CFFEBD /* DisplayMode.swift */; };
 		49DD49312853B27E00CFFEBD /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD49302853B27E00CFFEBD /* Toolbar.swift */; };
 		49DD493328551D4500CFFEBD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD493228551D4500CFFEBD /* TableView.swift */; };
+		49DD4942285ADBE400CFFEBD /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD4941285ADBE400CFFEBD /* DayPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		49DD492D2853A65D00CFFEBD /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		49DD49302853B27E00CFFEBD /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		49DD493228551D4500CFFEBD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		49DD4941285ADBE400CFFEBD /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				492FE9172850691D001068C4 /* TitleHeader.swift */,
 				492FE90F28505683001068C4 /* SidebarView.swift */,
 				49DD493228551D4500CFFEBD /* TableView.swift */,
+				49DD4941285ADBE400CFFEBD /* DayPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				492FE90E28505272001068C4 /* Networker.swift in Sources */,
 				492FE90C28505272001068C4 /* Day.swift in Sources */,
 				492FE91028505683001068C4 /* SidebarView.swift in Sources */,
+				49DD4942285ADBE400CFFEBD /* DayPicker.swift in Sources */,
 				49DD492E2853A65D00CFFEBD /* DisplayMode.swift in Sources */,
 				492FE8D9285050AB001068C4 /* ContentView.swift in Sources */,
 				492FE90B28505272001068C4 /* EventLink.swift in Sources */,
