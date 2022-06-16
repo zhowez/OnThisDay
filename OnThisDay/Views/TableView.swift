@@ -50,7 +50,7 @@ struct TableView: View {
               TableColumn("Title") {
                 Text($0.text)
               }
-          }
+              }.tableStyle(.bordered)
         }// 1
         if let selectedEvent = selectedEvent {
           // 2
